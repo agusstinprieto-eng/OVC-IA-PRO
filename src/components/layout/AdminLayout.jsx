@@ -77,12 +77,16 @@ export function AdminLayout({ children }) {
         </nav>
 
         {/* User */}
-        <div className={cn('px-3 py-4 border-t border-surface-700', collapsed && 'flex justify-center')}>
+        <div className={cn('px-3 py-4 border-t border-surface-700', collapsed && 'flex flex-col items-center gap-3')}>
           {!collapsed ? (
             <div>
               <p className="text-xs text-ink-400 truncate mb-0.5">{profile?.full_name ?? 'Admin'}</p>
               <p className="text-[10px] text-ocv-yellow uppercase tracking-widest mb-3">{profile?.role}</p>
               <button onClick={handleSignOut} className="text-xs text-ink-400 hover:text-red-400 transition-colors">Cerrar sesión →</button>
+              <p className="mt-4 text-[9px] text-ink-400/50">
+                Diseñado por{' '}
+                <a href="https://ia-agus.com" target="_blank" rel="noopener noreferrer" className="text-ocv-cyan/70 hover:text-ocv-cyan transition-colors">IA.AGUS</a>
+              </p>
             </div>
           ) : (
             <button onClick={handleSignOut} className="text-ink-400 hover:text-red-400 transition-colors w-5 h-5">

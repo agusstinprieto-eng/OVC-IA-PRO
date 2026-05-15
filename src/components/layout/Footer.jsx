@@ -62,7 +62,17 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-surface-700 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-ink-400">
           <p>© {new Date().getFullYear()} OCV Torreón. Todos los derechos reservados.</p>
-          <p>Desarrollado por <span className="text-ocv-cyan">McVill Digital</span></p>
+          <p>
+            Diseñado por{' '}
+            <a
+              href="https://ia-agus.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ocv-cyan hover:text-ocv-cyan-bright transition-colors font-semibold"
+            >
+              IA.AGUS
+            </a>
+          </p>
         </div>
       </div>
     </footer>
