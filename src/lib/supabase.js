@@ -1,11 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl  = import.meta.env.VITE_SUPABASE_URL
-const supabaseAnon = import.meta.env.VITE_SUPABASE_ANON_KEY
-
-if (!supabaseUrl || !supabaseAnon) {
-  throw new Error('Missing Supabase env vars. Check .env.local')
-}
+const supabaseUrl  = import.meta.env.VITE_SUPABASE_URL  ?? 'https://placeholder.supabase.co'
+const supabaseAnon = import.meta.env.VITE_SUPABASE_ANON_KEY ?? 'placeholder'
 
 export const supabase = createClient(supabaseUrl, supabaseAnon, {
   auth: {
@@ -13,3 +9,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnon, {
     autoRefreshToken: true,
   },
 })
+
+export const isSupabaseConfigured =
+  !!import.meta.env.VITE_SUPABASE_URL &&
+  import.meta.env.VITE_SUPABASE_URL !== 'https://TU_PROJECT_ID.supabase.co'
