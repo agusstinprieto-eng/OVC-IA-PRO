@@ -13,10 +13,7 @@
       "headers": [{ "key": "Cache-Control", "value": "no-store" }]
     }
   ],
-  "env": {
-    "STRIPE_SECRET_KEY":        "@stripe-secret-key",
-    "STRIPE_WEBHOOK_SECRET":    "@stripe-webhook-secret",
-    "MP_ACCESS_TOKEN":          "@mp-access-token",
-    "SUPABASE_SERVICE_ROLE_KEY":"@supabase-service-role-key"
-  }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
 }
