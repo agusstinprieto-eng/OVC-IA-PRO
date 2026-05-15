@@ -32,8 +32,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"big-noodle"', 'Impact', 'ui-sans-serif'],
-        body:    ['"aller"', 'Inter', 'ui-sans-serif'],
+        display: ['"Bebas Neue"', '"big-noodle"', 'Impact', 'ui-sans-serif'],
+        body:    ['"Nunito"', '"aller"', 'Inter', 'ui-sans-serif'],
       },
       boxShadow: {
         'glow-cyan':    '0 0 12px 2px rgba(0,172,209,0.55)',

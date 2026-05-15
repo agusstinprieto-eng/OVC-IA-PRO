@@ -2,25 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── OCV Custom Fonts ────────────────────────────────── */
-@font-face {
-  font-family: 'big-noodle';
-  src: url('/assets/fonts/big-noodle-titling.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'aller';
-  src: url('/assets/fonts/aller-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'aller';
-  src: url('/assets/fonts/aller-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
+/* ── OCV Custom Fonts (local — drop woff2 files in /public/assets/fonts/ to activate) ── */
+/* @font-face { font-family: 'big-noodle'; src: url('/assets/fonts/big-noodle-titling.woff2') format('woff2'); font-weight: 400; font-display: swap; } */
+/* @font-face { font-family: 'aller'; src: url('/assets/fonts/aller-regular.woff2') format('woff2'); font-weight: 400; font-display: swap; } */
+/* @font-face { font-family: 'aller'; src: url('/assets/fonts/aller-bold.woff2') format('woff2'); font-weight: 700; font-display: swap; } */
 
 /* ── Base Resets ─────────────────────────────────────── */
 @layer base {
